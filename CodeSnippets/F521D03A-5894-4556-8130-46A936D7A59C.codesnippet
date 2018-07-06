@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mLazyCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UICollectionView *)&lt;#collectionView#&gt;{
+    if (!_&lt;#collectionView#&gt;) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        CGFloat W = (kScreenWidth-3)/4;
+        //cell尺寸
+        layout.itemSize = CGSizeMake(W, W-.5);
+        layout.minimumLineSpacing = 1; //行距 因为是左右滚动，这里是左右间隔
+        layout.minimumInteritemSpacing = 1; //因为是左右滚动，这里是上下间隔
+        layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        layout.scrollDirection = 1; //左右滚动
+        
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, kScreenWidth/2.0) collectionViewLayout:layout];
+        collectionView.backgroundColor = [UIColor lightGrayColor];
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
+        collectionView.showsHorizontalScrollIndicator = NO;
+        collectionView.pagingEnabled = YES;
+        [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell_ID"];
+        _&lt;#collectionView#&gt; = collectionView;
+    }
+    return _&lt;#collectionView#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F521D03A-5894-4556-8130-46A936D7A59C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>.m lazy collectionView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m lazy collectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

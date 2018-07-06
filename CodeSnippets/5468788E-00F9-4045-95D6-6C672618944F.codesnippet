@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jhmas</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    [&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.left.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.right.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.bottom.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.width.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.height.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.centerX.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.centerY.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.leading.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+        make.trailing.mas_equalTo(&lt;#view#&gt;).mas_offset(&lt;#value#&gt;);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5468788E-00F9-4045-95D6-6C672618944F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mas_make</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mas_make</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

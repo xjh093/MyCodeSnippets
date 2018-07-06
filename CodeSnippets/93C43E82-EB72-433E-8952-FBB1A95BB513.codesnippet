@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mmdCreateTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UITableView *tableView = [[UITableView alloc] initWithFrame:&lt;#frame#&gt; style:0];
+    tableView.delegate = self; //UITableViewDelegate,UITableViewDataSource
+    tableView.dataSource = self;
+    tableView.rowHeight = &lt;#height#&gt;;
+    tableView.tableFooterView = [[UIView alloc] init];
+    tableView.showsVerticalScrollIndicator = NO;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>93C43E82-EB72-433E-8952-FBB1A95BB513</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m create tableview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

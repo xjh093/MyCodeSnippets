@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mmdCreateTextfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CGFloat X = 0,Y = 0,W = 0,H = 0;
+    UITextField *textField = [[UITextField alloc] init];
+    textField.frame = CGRectMake(X,Y,W,H);
+    textField.font = [UIFont systemFontOfSize:12];
+    textField.textColor = [UIColor whiteColor];
+    textField.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
+    textField.layer.cornerRadius = H * 0.5;
+    textField.placeholder = @"在此输入";
+    [textField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [textField setValue:[UIFont boldSystemFontOfSize:12] forKeyPath:@"_placeholderLabel.font"];
+    textField.returnKeyType = UIReturnKeySearch;
+    textField.tintColor = [UIColor whiteColor];
+    textField.clearButtonMode = 1;
+    textField.leftViewMode = 3;
+    textField.leftView = ({
+        UIView *view = [[UIView alloc] init];
+        view.bounds = CGRectMake(0, 0, 33, H);
+        
+        UIView *searchView = [[UIView alloc] init];
+        searchView.frame = CGRectMake(10, (H-23)*0.5, 23, 23);
+        searchView.layer.contents = (id)[UIImage imageNamed:@"search"].CGImage;
+        [view addSubview:searchView];
+        
+        view;
+    });
+    textField.delegate = self;
+    [self addSubview:textField];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0E441BB8-B0C1-4E8B-A2FE-D2AB84800E2B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m create textField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
