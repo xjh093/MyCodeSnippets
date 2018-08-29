@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mShadow</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#View#&gt;.layer.shadowPath = [UIBezierPath bezierPathWithRect:&lt;#View#&gt;.frame].CGPath;
+        &lt;#View#&gt;.layer.shadowOffset = CGSizeMake(0, 0);
+        &lt;#View#&gt;.layer.shadowOpacity = 1;
+        &lt;#View#&gt;.layer.shadowRadius = 4;
+        &lt;#View#&gt;.layer.shadowColor = kJHUIColorFromHexRGB(0x295986).CGColor;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D3E19C3D-539D-4632-8FD8-B212015A49C0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>set view shadow</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mShadow</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
