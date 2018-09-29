@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mmdCreateButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, 0, 0);
+    button.backgroundColor = [UIColor lightGrayColor];
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    [button setTitle:@"" forState:0];
+    [button setTitleColor:[UIColor blackColor] forState:0];
+    [button setImage:nil forState:0];
+    [button addTarget:self action:@selector(xx_click_button:) forControlEvents:1&lt;&lt;6];
+    [&lt;#superview#&gt; addSubview:button];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>35A61E46-852C-4DE2-B131-4CFC48EAAA6D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m create a button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

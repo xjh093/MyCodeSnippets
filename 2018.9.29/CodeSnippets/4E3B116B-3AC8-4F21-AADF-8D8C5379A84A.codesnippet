@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mLazyTableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITableView *)&lt;#tableView#&gt;{
+    if (!_&lt;#tableView#&gt;) {
+        UITableView *tableView = [[UITableView alloc] initWithFrame:&lt;#frame#&gt; style:0];
+        tableView.delegate = self; //UITableViewDelegate,UITableViewDataSource
+        tableView.dataSource = self;
+        tableView.rowHeight = &lt;#height#&gt;;
+        tableView.tableFooterView = [[UIView alloc] init];
+        tableView.showsVerticalScrollIndicator = NO;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _&lt;#tableView#&gt; = tableView;
+    }
+    return _&lt;#tableView#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4E3B116B-3AC8-4F21-AADF-8D8C5379A84A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mlazytableview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m lazy tableview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

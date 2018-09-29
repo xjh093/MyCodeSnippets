@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mChildVC ShowIn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)jh_dismiss{
+    [self.view removeFromSuperview];
+    [self removeFromParentViewController];
+}
+
+- (void)jh_showIn:(UIViewController *)vc{
+    [vc addChildViewController:self];
+    [vc.view addSubview:self.view];
+    [self didMoveToParentViewController:vc];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E6F27661-0529-4462-AF8F-75A3B906E985</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m childVC show or not</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

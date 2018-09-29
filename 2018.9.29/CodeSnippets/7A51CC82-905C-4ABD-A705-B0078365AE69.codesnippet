@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jhstrongbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>JH_LAZY_STRONG_UI(UIButton, &lt;#button#&gt;, ({
+    UIButton
+    .jh_button(@(0))
+    .jh_title(@"")
+    .jh_color(@"0x000000")
+    .jh_image(@"name")
+    .jh_bgColor(@"0xeeeeee")
+    .jh_target_selector_event(self,@"jhButtonEvent:",@(1&lt;&lt;6));
+}))</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7A51CC82-905C-4ABD-A705-B0078365AE69</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>StrongButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

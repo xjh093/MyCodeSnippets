@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mlazytextfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITextField *)&lt;#textField#&gt;{
+    if (!_&lt;#textField#&gt;) {
+        UITextField *textField = [[UITextField alloc] init];
+        textField.font = [UIFont systemFontOfSize:16];
+        textField.textColor = kMainTextColor;
+        textField.backgroundColor = self.view.backgroundColor;
+        textField.placeholder = @"登录密码";
+        [textField setValue:kDetailTextColor forKeyPath:@"_placeholderLabel.textColor"];
+        [textField setValue:[UIFont systemFontOfSize:16] forKeyPath:@"_placeholderLabel.font"];
+        textField.tintColor = kMainColor;
+        textField.secureTextEntry = YES;
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.rightViewMode = 3;
+        textField.rightView = ({
+            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+            [button setImage:[UIImage imageNamed:@"on"] forState:0];
+            [button setImage:[UIImage imageNamed:@"off"] forState:1&lt;&lt;2];
+            [button addTarget:self action:@selector(xjh_shouldShowPWD:) forControlEvents:1&lt;&lt;6];
+            [button sizeToFit];
+            button.selected = YES;
+            button;
+        });
+        [self.view addSubview:textField];
+        _&lt;#textField#&gt; = textField;
+    }
+    return _&lt;#textField#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5CE2B985-3E71-416B-BD05-9D1488F01096</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mlazytextfield</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m lazy textField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

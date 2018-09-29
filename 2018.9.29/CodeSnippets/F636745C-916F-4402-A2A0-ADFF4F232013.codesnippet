@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mLazyButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#button#&gt;{
+    if (!_&lt;#button#&gt;) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(0, 0, 0, 0);
+        button.backgroundColor = [UIColor lightGrayColor];
+        button.titleLabel.font = [UIFont systemFontOfSize:16];
+        [button setTitle:@"" forState:0];
+        [button setTitleColor:[UIColor blackColor] forState:0];
+        [button setImage:nil forState:0];
+        [button addTarget:self action:@selector(xx_click_button:) forControlEvents:1&lt;&lt;6];
+        _&lt;#button#&gt; = button;
+    }
+    return _&lt;#button#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F636745C-916F-4402-A2A0-ADFF4F232013</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mlazybutton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m lazy button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

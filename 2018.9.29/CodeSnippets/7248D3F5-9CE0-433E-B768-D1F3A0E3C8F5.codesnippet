@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jhAlertController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            UIAlertController
+            .jhAlertCtrl(@"Title", @"message", @(1))
+            .jh_addNormalAction(@"确定",^{
+                //code
+            })
+            .jh_addCancelAction(@"取消",^{
+                //code
+            })
+            .jh_addDestructAction(@"删除",^{
+                //code
+            })
+            .jh_show(self);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7248D3F5-9CE0-433E-B768-D1F3A0E3C8F5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jhAlertController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m Alert Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

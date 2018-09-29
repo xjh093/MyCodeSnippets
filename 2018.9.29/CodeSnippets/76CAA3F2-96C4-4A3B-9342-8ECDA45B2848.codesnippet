@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jhAddLayer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[cell.layer addSublayer:({
+        CALayer *layer = [[CALayer alloc] init];
+        layer.frame = CGRectMake(0, 0, 0, 0);
+        layer.backgroundColor = UIColorHexFromRGB(0xe0e0e0).CGColor;
+        layer;
+    })];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>76CAA3F2-96C4-4A3B-9342-8ECDA45B2848</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>add a line</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>jh add layer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

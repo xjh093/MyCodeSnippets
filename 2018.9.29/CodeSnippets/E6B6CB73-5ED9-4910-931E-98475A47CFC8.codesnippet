@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>HNAPI_m</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/*
+ *  如果不需要传参，则不需要描述该属性
+ */
+@interface &lt;#HNGetHotAnchorsAPI#&gt; ()
+
+@property (nonatomic, strong) NSDictionary *parameters;
+
+@end
+
+@implementation &lt;#HNGetHotAnchorsAPI#&gt;
+#pragma mark - init
+- (instancetype)initAPIWithParameters:(NSDictionary *)parameters
+{
+    self = [super init];
+    if (self) {
+        _parameters = parameters;
+    }
+    return self;
+}
+
+#pragma mark - DRD
+- (nullable id)requestParameters
+{
+    return _parameters;
+}
+
+- (NSString *)appendRequestUrl
+{
+    return &lt;#subfixURL#&gt;;
+}
+
+- (HNRequestMethodType)apiRequestMethodType
+{
+    return HNRequestMethodTypeGET;
+}
+
+- (id)apiResponseObjReformer:(id)responseObject andError:(NSError *)error{
+    
+    if (![responseObject isKindOfClass:[NSDictionary class]]) {
+        DLog(@"数据返回格式不正确！&lt;#HNGetHotAnchorsAPI#&gt;-----%@",responseObject);
+        return nil;
+    }
+    
+    // 在这里处理数据， 直接转换成模型对象， 以下为示例
+    /*
+     示例1， 直接返回一个对象
+     HNBannerModel *bannerModel = [HNBannerModel modelWithDictionary:responseObject];
+     
+     示例2， 返回一个数组， 数组内为对象
+     NSArray *bannerListArray = [NSArray modelArrayWithClass:[HNBannerModel class] json:responseObject[@"banner"]];
+     */
+    
+    return responseObject;
+}
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E6B6CB73-5ED9-4910-931E-98475A47CFC8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>API_m</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mmdCreateTextView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UITextView *textView = [[UITextView alloc] init];
+    textView.frame = CGRectMake(0, 0, 0, 0);
+    textView.text = @"";
+    textView.textColor = [UIColor blackColor];
+    textView.font = [UIFont systemFontOfSize:14];
+    textView.delegate = self; //UITextViewDelegate
+    textView.textAlignment = NSTextAlignmentLeft;
+    textView.showsVerticalScrollIndicator = NO;
+    [&lt;#view#&gt; addSubview:textView];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD342325-B80B-4E09-9EEC-68DD969DF19A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>.m create textView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
